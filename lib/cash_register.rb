@@ -29,5 +29,6 @@ class CashRegister
 
   def void_last_transaction
     self.total -= self.last_transaction
+    #huh, are we supposed to delete the last transaction items?
   end
 end
