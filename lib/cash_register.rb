@@ -7,6 +7,6 @@ class CashRegister
   end
 
   def add_item title, price
-    self.
+    self.items << { title => price}
   end
 end
