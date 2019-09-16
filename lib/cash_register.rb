@@ -10,4 +10,8 @@ class CashRegister
     self.items << { title: title, price: price}
     self.total += price * quantity
   end
+
+  def apply_discount 
+    self.total = self.total - self.total * discount/100
+  end
 end
