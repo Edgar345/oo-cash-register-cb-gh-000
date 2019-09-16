@@ -1,5 +1,6 @@
 class CashRegister
   attr_accessor :discount, :total, :items, :last_transaction
+  
   def initialize discount = 0
     @discount = discount
     @total = 0
@@ -11,6 +12,7 @@ class CashRegister
     # self.items << { title: title, price: price}
     self.items.concat(Array.new(quantity, title))
     self.total += price * quantity
+    self.last_transaction = price * quantity
   end
 
   def apply_discount
