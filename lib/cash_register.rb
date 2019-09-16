@@ -18,7 +18,7 @@ class CashRegister
     if @discount == 0
       result_message = "There is no discount to apply."
     else
-      "After the discount, the total comes to $#{self.total}."
+      result_message = "After the discount, the total comes to $#{self.total}."
     end
     result_message
   end
