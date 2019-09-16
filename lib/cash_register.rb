@@ -6,7 +6,8 @@ class CashRegister
     @items = []
   end
 
-  def add_item title, price
-    self.items << { title => price}
+  def add_item title, price, quantity = 1
+    self.items << { title: title, price: price}
+    self.total += price * quantity
   end
 end
